@@ -1,182 +1,248 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 
 :root {
-    --mainTextColor-light: #000;
-    --secondaryTextColor-light: rgb(51 51 51);
-    --mainLinkColor-light: #0da2b8;
-    --mainBorderColor-light: rgb(218, 218, 218);
-    --mainBgColor-light: rgb(249, 250, 251);
+  --mainTextColor-light: #000;
+  --secondaryTextColor-light: rgb(51 51 51);
+  --mainLinkColor-light: #0da2b8;
+  --mainBorderColor-light: rgb(218, 218, 218);
+  --mainBgColor-light: rgb(249, 250, 251);
 
-    --mainTextColor-dark: #fff;
-    --secondaryTextColor-dark: #adb0b1;
-    --mainLinkColor-dark: rgb(30, 190, 214);
-    --mainBorderColor-dark: #2b3031;
-    --mainBgColor-dark: #131415;
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: rgb(30, 190, 214);
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
 
-    --mainTextColor: var(--mainTextColor-dark);
-    --secondaryTextColor: var(--secondaryTextColor-dark);
-    --mainLinkColor: var(--mainLinkColor-dark);
-    --mainBorderColor: var(--mainBorderColor-dark);
-    --mainBgColor: var(--mainBgColor-dark);
-
+  --mainTextColor: var(--mainTextColor-dark);
+  --secondaryTextColor: var(--secondaryTextColor-dark);
+  --mainLinkColor: var(--mainLinkColor-dark);
+  --mainBorderColor: var(--mainBorderColor-dark);
+  --mainBgColor: var(--mainBgColor-dark);
 }
 
 * {
-    font-family: 'Readex Pro';
-    line-height: 1.5em;
-    box-sizing: border-box;
-    color: var(--mainTextColor);
-
+  font-family: "Readex Pro";
+  line-height: 1.5em;
+  box-sizing: border-box;
+  color: var(--mainTextColor);
 }
 
 body {
-    background-color: var(--mainBgColor);
+  background-color: var(--mainBgColor);
 }
 
-p, span, li {
-    color: var(--secondaryTextColor);
-    font-size: 1em;
+p,
+span,
+li {
+  color: var(--secondaryTextColor);
+  font-size: 1em;
 }
 
 a {
-    text-decoration: none;
-    color: var(--mainTextColor);
-    font-weight: 500;
+  text-decoration: none;
+  color: var(--mainTextColor);
+  font-weight: 500;
 }
 
 li {
-    line-height: 1.9em;
+  line-height: 1.9em;
 }
 
 #container--main {
-    max-width: 700px;
-    margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .section--page {
-    padding-top: 1em;
-    padding-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #wrapper--hero {
-    display: flex;
-    align-items: center;
-    gap: 4em
+  display: flex;
+  align-items: center;
+  gap: 4em;
 }
 
 #user-name {
-    font-size: 2em;
-    line-height: 1em;
+  font-size: 2em;
+  line-height: 1em;
 }
 
 #bio {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 #profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 #email {
-    color: var(--mainTextColor)
+  color: var(--mainTextColor);
 }
 
 #socials--list {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 1em;
-    flex-wrap: wrap
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+  flex-wrap: wrap;
 }
 
 #socials--list a {
-    font-size: 0.9em;
-    color: var(--secondaryTextColor);
-    transition: 0.3s;
+  font-size: 0.9em;
+  color: var(--secondaryTextColor);
+  transition: 0.3s;
 }
 
 #socials--list a:hover {
-    color: var(--mainLinkColor)
+  color: var(--mainLinkColor);
 }
 
 #qualifications--list {
-    list-style: none;
+  list-style: none;
 }
 
 #wrapper--techstack__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    font-size: 0.9em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
 }
 
 .card--techstack {
-    border: 1px solid var(--mainBorderColor);
-    padding: 0.5em 1em;
-    border-radius: 5px;
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
 }
 
 .card--project {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-top: 1px solid var(--mainBorderColor);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid var(--mainBorderColor);
 }
 
 .card--project a {
-    color: var(--mainTextColor);
+  color: var(--mainTextColor);
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .card--project a:hover {
-    color: rgb(30, 190, 214);
-
+  color: rgb(30, 190, 214);
 }
 
 .card--work-history {
-    border-left: 1px solid var(--mainBorderColor);
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-left: 2em;
+  border-left: 1px solid var(--mainBorderColor);
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-left: 2em;
 }
 
 .line-break {
-    background-color: var(--mainBorderColor);
-    height: 1px;
+  background-color: var(--mainBorderColor);
+  height: 1px;
 }
 
-@media(max-width:600px) {
-
-    .section--page {
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-
-    #wrapper--hero {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-    }
-
-    #profile-pic {
-        width: 200px;
-        height: 200px;
-    }
-
-    #wrapper--hero {
-        flex-direction: column;
-    }
-
-    .card--work-history {
-        border-left: none;
-        padding-left: 0;
-    }
+.carousel {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
 }
 
-@media(max-width:480px) {
-    .details {
-        text-align: center;
-    }
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: carousel-animation 15s infinite;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.carousel-slide p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  width: 80%;
+}
+
+.carousel-control {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  color: #333333;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 10px;
+}
+
+.carousel-control:hover {
+  background-color: #f3f3f3;
+  border-color: #999999;
+}
+
+@keyframes carousel-animation {
+  0%,
+  100% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  /* Add more steps as needed */
+}
+
+@media (max-width: 600px) {
+  .section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  #wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  #profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  #wrapper--hero {
+    flex-direction: column;
+  }
+
+  .card--work-history {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .details {
+    text-align: center;
+  }
 }

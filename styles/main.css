@@ -124,6 +124,7 @@ li {
   flex-wrap: wrap;
   gap: 1em;
   font-size: 0.9em;
+  margin-top: 25px;
 }
 
 .card--techstack {

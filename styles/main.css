@@ -29,6 +29,7 @@
 
 body {
   background-color: var(--mainBgColor);
+  padding: 10px;
 }
 
 p,
@@ -116,7 +117,6 @@ svg:hover {
 }
 .resume {
   background-color: #0da2b8;
-  height: 50px;
   line-height: 30px;
   border-radius: 5px;
   padding: 10px;
@@ -131,6 +131,8 @@ svg:hover {
 
 #qualifications--list {
   list-style: none;
+  margin-left: 0;
+  padding-left: 10px;
 }
 
 #wrapper--techstack__items {
@@ -283,5 +285,8 @@ svg:hover {
 @media (max-width: 480px) {
   .details {
     text-align: center;
+  }
+  .resume-holder {
+    flex-direction: column;
   }
 }

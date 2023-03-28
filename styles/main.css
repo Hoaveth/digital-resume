@@ -290,3 +290,9 @@ svg:hover {
     flex-direction: column;
   }
 }
+
+@media (max-width: 540px) {
+  .resume-holder {
+    flex-direction: column;
+  }
+}

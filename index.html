@@ -3,7 +3,8 @@
   <head>
     <title>Justine Espinosa</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link href="./styles/main.css" rel="stylesheet" />
   </head>
   <body>
@@ -25,15 +26,18 @@
           <a
             href="https://www.linkedin.com/in/justine-espinosa/"
             target="_blank"
-            >LinkedIn</a
-          >
+            ><img src="./assets/icons/linkedin.svg"
+          /></a>
           <a href="https://www.facebook.com/justicism15/" target="_blank"
-            >Facebook</a
-          >
-          <a href="https://github.com/Hoaveth" target="_blank">Github</a>
+            ><img src="./assets/icons/fb.svg"
+          /></a>
+          <a href="https://github.com/Hoaveth" target="_blank"
+            ><img src="./assets/icons/github.svg"
+          /></a>
           <a
-            href="./assets/Espinosa-Resume-Software-Developer.pdf"
+            href="./assets/Espinosa_Resume_Software_Developer.pdf"
             target="_blank"
+            class="resume"
             >Download Resume</a
           >
         </div>
@@ -56,7 +60,10 @@
 
         <div id="wrapper--techstack__items">
           <div class="card--techstack">
-            <span>HTML, CSS, JavaScript, React, React Native, Typescript</span>
+            <span
+              >HTML, CSS, JavaScript, React, React Native, Typescript, Redux,
+              TailwindCSS</span
+            >
           </div>
           <div class="card--techstack">
             <span> Python, Dotnet, Java</span>
@@ -70,7 +77,10 @@
         </div>
       </section>
 
-      <section id="work-history-wrapper" class="section--page">
+      <section
+        id="work-history-wrapper"
+        class="section--page section-to-fade fade-section work"
+      >
         <h2>Work History</h2>
         <div class="line-break"></div>
 
@@ -109,11 +119,16 @@
             </li>
             <li>
               Produced a much faster site templating generator by migrating the
-              older version to React and Dotnet
+              older version to React and Dotnet.
             </li>
             <li>
               Produced high quality cloud integrations for individual company's
               job postings.
+            </li>
+            <li>
+              Promoted to become Team Lead for Product Operations Tools and was
+              able to handle seven developers to support different internal
+              tools.
             </li>
           </ul>
         </div>
@@ -147,7 +162,10 @@
         </div>
       </section>
 
-      <section id="work-history-wrapper" class="section--page">
+      <section
+        id="work-history-wrapper"
+        class="section--page section-to-fade fade-section"
+      >
         <h2>Education</h2>
         <div class="line-break"></div>
 
@@ -159,7 +177,7 @@
           <p>2015 - 2019</p>
           <p>Majored in Web and Mobile Development</p>
           <ul>
-            <li>Graduated as Magna Cum Laude</li>
+            <li>Graduated as <strong>Magna Cum Laude</strong></li>
             <li>
               Awarded as the Most Outstanding Student in the field of Academics
               and Student Service
@@ -176,7 +194,7 @@
         </div>
       </section>
 
-      <section class="section--page">
+      <section class="section--page section-to-fade fade-section">
         <h2>Side Projects</h2>
 
         <div class="card--project">
@@ -247,5 +265,6 @@
         </div>
       </section>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
